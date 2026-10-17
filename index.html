@@ -20,6 +20,8 @@ header{background:var(--wit);border-bottom:1px solid var(--rand);position:sticky
 nav a{margin-left:18px;text-decoration:none;font-weight:600;font-size:16px}
 nav a.taal{color:var(--grijs);font-weight:400}
 .hero{background:var(--blauw);color:var(--wit);padding:64px 0}
+.hero .wrap{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.hero-logo{flex:0 0 auto;width:260px;height:auto}
 .hero h1{font-family:"Source Serif 4",Georgia,serif;font-size:40px;line-height:1.2;max-width:720px;margin-bottom:18px}
 .hero p{font-size:20px;max-width:640px;opacity:.92;margin-bottom:28px}
 .knop{display:inline-block;padding:14px 24px;border-radius:6px;text-decoration:none;font-weight:700;margin:0 10px 10px 0}
@@ -41,22 +43,25 @@ h2{font-family:"Source Serif 4",Georgia,serif;color:var(--blauw);font-size:30px;
 footer{background:#14263f;color:#c9d3df;padding:36px 0;font-size:15px}
 footer a{color:#ffffff}
 footer .rij{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
-@media (max-width:760px){body{font-size:17px}.hero{padding:44px 0}.hero h1{font-size:30px}nav a{margin:0 14px 0 0}.twee{grid-template-columns:1fr}}
+@media (max-width:760px){.hero .wrap{flex-direction:column-reverse;align-items:flex-start;gap:28px}.hero-logo{width:150px}body{font-size:17px}.hero{padding:44px 0}.hero h1{font-size:30px}nav a{margin:0 14px 0 0}.twee{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="mock">Voorbeeldontwerp voor een nieuwe website van ANEAS, aangeboden door Communities Abroad</div>
 <header>
 <div class="wrap kop">
-<a href="#" class="logo"><img src="aneas-header.webp" width="1600" height="327" alt="ANEAS, Nederlandse Vereniging voor Onderlinge Hulpverlening" style="width:min(100%,520px);height:auto;display:block"></a>
+<a href="#" class="logo">ANEAS<span>Nederlandse Vereniging voor Onderlinge Hulpverlening, sinds 1885</span></a>
 <nav><a href="#hulp">Hulp nodig?</a><a href="#over">Over ons</a><a href="#steun">Steun ons</a><a href="https://aneas.fr/nl/contact.html">Contact</a><a href="https://aneas.fr/fr/" class="taal">FR</a></nav>
 </div>
 </header>
 <div class="hero">
 <div class="wrap">
+<div class="hero-tekst">
 <h1>Vastgelopen in Frankrijk? U staat er niet alleen voor.</h1>
 <p>ANEAS helpt Nederlanders in Frankrijk die in de problemen zijn geraakt en er zelf niet meer uitkomen. Onze vrijwilligers spreken uw taal en kennen de weg in Frankrijk en Nederland.</p>
 <a href="https://aneas.fr/nl/contact.html" class="knop hoofd">Ik zoek hulp</a><a href="#steun" class="knop tweede">Word lid of doneer</a>
+</div>
+<img src="aneas-logo-licht.webp" class="hero-logo" width="560" height="483" alt="ANEAS, Nederlandse Vereniging voor Onderlinge Hulpverlening">
 </div>
 </div>
 <section id="hulp">
